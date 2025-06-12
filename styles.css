@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f2; /* Blanco suave */
+    color: #48392a; /* Marrón oscuro */
+}
+
+.navbar {
+    background-color: #48392a; /* Marrón oscuro */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.logo h1 {
+    color: #f2f7f2; /* Blanco suave */
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #f2f7f2; /* Blanco suave */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links li a:hover {
+    color: #c49bbb; /* Rosa suave */
+}
+
+.nav-links li a.active {
+    color: #c49bbb; /* Rosa suave */
+    font-weight: bold;
+}
+
+main {
+    margin-top: 80px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero {
+    background-color: #c49bbb; /* Rosa suave */
+    color: #f2f7f2; /* Blanco suave */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 auto 2rem;
+    max-width: 800px;
+}
+
+.logo-img-hero {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #48392a; /* Marrón oscuro */
+    color: #f2f7f2; /* Blanco suave */
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #c49bbb; /* Rosa suave */
+    transform: scale(1.05);
+}
+
+.products {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.products h2 {
+    font-size: 1.8rem;
+    color: #48392a; /* Marrón oscuro */
+    margin-bottom: 1.5rem;
+}
+
+.product-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f2f7f2; /* Blanco suave */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(100, 166, 189, 0.2); /* Sombra azul suave */
+    width: 200px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #48392a; /* Marrón oscuro */
+    margin-bottom: 0.3rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #48392a; /* Marrón oscuro */
+    margin: 0;
+}
+
+.about, .contact {
+    background-color: #f2f7f2; /* Blanco suave */
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(100, 166, 189, 0.2); /* Sombra azul suave */
+}
+
+.about h2, .contact h2 {
+    font-size: 1.8rem;
+    color: #48392a; /* Marrón oscuro */
+}
+
+.about-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(100, 166, 189, 0.2); /* Sombra azul suave */
+    margin: 1rem auto;
+    display: block;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #48392a; /* Marrón oscuro */
+    color: #f2f7f2; /* Blanco suave */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Nuevas secciones */
+.services .card {
+    background-color: #F4A261; /* Naranja melocotón */
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+}
+
+.flavors .card {
+    background-color: #6B8A7A; /* Verde oliva claro */
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+}
+
+.service-content, .flavor-content {
+    display: flex;
+    width: 100%;
+    gap: 4rem; /* Espacio para imágenes grandes */
+}
+
+.service-img, .flavor-img {
+    width: 450px !important; /* Tamaño confirmado */
+    height: 350px !important; /* Tamaño confirmado */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #64a6bd; /* Borde para verificar */
+}
+
+.service-text, .flavor-text {
+    flex: 1 1 auto;
+    padding: 0;
+    color: #48392a; /* Marrón oscuro */
+    text-align: left;
+    width: 100%;
+}
+
+.service-content .service-img {
+    margin-right: 2rem;
+}
+
+.flavor-content .flavor-img {
+    margin-left: 2rem;
+    order: 2; /* Mueve la imagen a la derecha */
+}
+
+.flavor-content .flavor-text {
+    order: 1; /* Mueve el texto a la izquierda */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        z-index: 10;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: #f2f7f2; /* Blanco suave */
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-toggle-label span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-toggle-label span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .nav-toggle-label span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 3rem;
+        width: 100%;
+        background-color: #c49bbb; /* Rosa suave */
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        color: #f2f7f2; /* Blanco suave */
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero, .about, .contact {
+        padding: 1rem;
+    }
+
+    .hero h2, .about h2, .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p, .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .about-img {
+        max-width: 250px;
+    }
+
+    .services .card, .flavors .card {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto; /* Centra la tarjeta */
+        max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+        width: 90%; /* Reduce el ancho para mejor centrado */
+    }
+
+    .service-content, .flavor-content {
+        flex-direction: column;
+    }
+
+    .service-img, .flavor-img {
+        margin: 0 auto 1rem;
+        width: 100%;
+        max-width: 450px; /* Mantiene el tamaño máximo */
+        border: 2px solid #64a6bd; /* Borde para verificar */
+    }
+
+    .service-content .service-img {
+        margin-right: 0;
+    }
+
+    .flavor-content .flavor-img {
+        margin-left: 0;
+        order: 0; /* Restaura el orden en móviles */
+    }
+
+    .flavor-content .flavor-text {
+        order: 0; /* Restaura el orden en móviles */
+    }
+}
