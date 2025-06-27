@@ -204,6 +204,22 @@ footer p {
     font-size: 0.9rem;
 }
 
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: #f2f7f2; /* Blanco suave */
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #F4A261; /* Naranja melocotón, inspirado en mango */
+}
+
 /* Nuevas secciones */
 .services .card {
     background-color: #F4A261; /* Naranja melocotón */
