@@ -87,6 +87,7 @@ main {
 .logo-img-hero {
     width: 200px;
     height: auto;
+    border-radius: 5px;
     margin-bottom: 1rem;
 }
 
