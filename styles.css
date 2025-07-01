@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f7f2; /* Blanco suave */
+    background-color: #fff4de; /* Blanco suave */
     color: #48392a; /* Marrón oscuro */
 }
 
 .navbar {
-    background-color: #48392a; /* Marrón oscuro */
+    background-color: #873e23; /* Marrón oscuro */
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -194,7 +194,7 @@ main {
 }
 
 footer {
-    background-color: #48392a; /* Marrón oscuro */
+    background-color: #873e23; /* Marrón oscuro */
     color: #f2f7f2; /* Blanco suave */
     text-align: center;
     padding: 1rem;
