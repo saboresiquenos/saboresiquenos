@@ -97,6 +97,29 @@
         </section>
     </main>
 
+    <section class="testimonials">
+            <h2>Lo que dicen de nosotros</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <img src="res/user1.png" alt="Usuario 1" class="testimonial-img">
+                    <p>"¡El café de mango es increíble! Perfecto para mi evento escolar."</p>
+                    <span>- María G.</span>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="res/user2.png" alt="Usuario 2" class="testimonial-img">
+                    <p>"Servicio rápido y el latte de uva es delicioso. ¡Recomendado!"</p>
+                    <span>- Juan P.</span>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="res/user3.webp" alt="Usuario 3" class="testimonial-img">
+                    <p>"La decoración del café móvil fue un éxito en nuestra boda."</p>
+                    <span>- Ana L.</span>
+                </div>
+            </div>
+            <button class="prev-btn">◄</button>
+            <button class="next-btn">►</button>
+        </section>
+    
     <footer>
         <div class="social-icons">
             <a href="https://wa.me/+51950605012" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -106,5 +129,31 @@
             <p>© 2025 Sabores Iqueños - Café Express. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const slider = document.querySelector('.testimonial-slider');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            else if (index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+            slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+
+        // Carrusel automático (opcional, cada 5 segundos)
+        let autoSlide = setInterval(() => showSlide(currentSlide + 1), 5000);
+
+        // Pausar al hacer hover
+        slider.addEventListener('mouseover', () => clearInterval(autoSlide));
+        slider.addEventListener('mouseout', () => {
+            autoSlide = setInterval(() => showSlide(currentSlide + 1), 5000);
+        });
+    </script>
 </body>
 </html>
